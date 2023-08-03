@@ -1,0 +1,70 @@
+<!--
+    final columns
+Index(['radius_mean', 'texture_mean', 'smoothness_mean', 'concavity_mean',
+       'fractal_dimension_mean', 'radius_se', 'smoothness_se',
+       'compactness_se', 'concavity_se', 'symmetry_se',
+       'fractal_dimension_se'],
+      dtype='object')
+-->
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Management System</title>
+    <link
+      rel="stylesheet"
+      href="../static/style2.css"
+    />
+  </head>
+  <body>
+    <div class="form1">
+      <form method="POST" enctype="multipart/form-data" action="http://127.0.0.1:5000/predict1">
+        <h1>Breast Cancer Detection</h1>
+        <br />
+        <div id="flex-container">
+          <b>
+            <label>Radius_mean</label>
+            <input type="number" name="a" placeholder="enter" /> <br /><br />
+            <label>texture_mean</label>
+            <input type="number" name="b" placeholder="enter" step="0.01" />
+            <br /><br />
+            <label>smoothness_mean</label>
+            <input type="number" name="c" placeholder="enter" step="0.01" />
+            <br /><br />
+            <label>concavity_mean</label>
+            <input type="number" name="d" placeholder="enter" step="0.01" />
+            <br /><br />
+            <label>fractal_dimension<br>mean</label>
+            <input type="number" name="e" placeholder="enter" step="0.01" />
+            <br /><br />
+            <label>radius_se</label>
+            <input type="number" name="f" placeholder="enter" step="0.01" />
+            <br />
+            <br />
+            <label>smoothness_se</label>
+            <input type="number" name="g" placeholder="enter" step="0.001" />
+            <br />
+            <br />
+            <label>compactness_se</label>
+            <input type="number" name="h" placeholder="enter" /> <br />
+            <br />
+            <br />
+            <label>concavity_se</label>
+            <input type="number" name="i" placeholder="enter" /> <br />
+            <br />
+            <br />
+            <label>symmetry_se</label>
+            <input type="number" name="j" placeholder="enter" /> <br />
+            <br />
+            <br />
+            <label>fractal_dimension<br>se</label>
+            <input type="number" name="k" placeholder="enter" /> <br />
+            <br />
+          </b>
+          <input type="submit" , value='predict!' >
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

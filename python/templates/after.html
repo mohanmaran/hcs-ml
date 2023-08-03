@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Medical Report</title>
+    <style>
+
+    </style>
+  </head>
+  <body>
+<div>
+  {% if data == 1 %}
+    
+  <h1>yes test positive</h1>
+  
+
+{% elif data == 0 %}
+
+
+<h1>no test negative</h1>
+ 
+
+{%endif%}
+<div class="chart">
+                    
+  <img src="data:image/png;base64,{{ image_base64_8 }}" alt="Chart">
+  
+</div>
+<div class="chart">
+                    
+  <img src="data:image/png;base64,{{ image_base64_9 }}" alt="Chart">
+  
+</div>
+<div class="chart">
+                    
+  <img src="data:image/png;base64,{{ image_base64_10 }}" alt="Chart">
+  
+</div>
+<div class="chart">
+                    
+  <img src="data:image/png;base64,{{ image_base64_11 }}" alt="Chart">
+  
+</div>
+</div>
+
+</body>
+</html>
+
+

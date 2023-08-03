@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Medical Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .con {
+            max-width: 500px;
+            height: 300px;
+            margin: 40px auto 0;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        input[type="file"] {
+            display: block;
+            margin-bottom: 20px;
+            width: 90%;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        input[type="file"]:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 90%;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .con1
+        {
+            margin-top: 70px;
+        }
+        a.back-link {
+            display: block;
+            text-align: center;
+            color: #007bff;
+            text-decoration: none;
+            margin-top: 20px;
+
+        }
+        a.back-link:hover {
+            text-decoration: underline;
+        }
+
+        button.back-button {
+            display: block;
+           
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width:90%;
+        }
+        button.back-button:hover {
+            background-color: #0056b3;
+        }
+</style>
+</head>
+<body>
+    <h1>Upload Medical Report</h1>
+    <div class="con">
+        <div class="con1">
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="pdf_file" accept=".pdf" required>
+            <input type="submit" value="Upload"><br><br>
+            <button class="back-button" onclick="goToIndex()">Back</button>
+        </form>
+        </div>
+    </div>
+    <script>
+        function goToIndex() {
+            // Use JavaScript to navigate to the same URL
+            window.location.href = "http://127.0.0.1:5000/index";
+        }
+    </script>
+</body>
+</html>
